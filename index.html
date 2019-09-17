@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Say or Drink</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Our Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Scrollbar Custom CSS -->
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+</head>
+
+<body style="background: #ffddd0">
+    <div class="menu-side">
+        <div id="theme_1" class="background-theme" style="background: #fffdd0;" onclick="change_theme('theme_1');"></div>
+        <div id="theme_2" class="background-theme" style="background: #d0fff0;" onclick="change_theme('theme_2');"></div>
+        <div id="theme_3" class="background-theme" style="background: #d9d0ff;" onclick="change_theme('theme_3');"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="d-flex flex-wrap">
+            <div class="row justify-content-center align-items-center mt-5 w-100 mx-auto">
+                <div id ="card_1" class="col-3 p-card d-flex justify-content-center hide-card">
+                    <div class="card text-white shadow mid-transition-scale" style="width: 65%;">
+                      <img height="416px" width="100%" src="images/image73.jpg" class="card-img-top" alt="...">
+                      <div class="card-body bg-teal text-center">
+                        <h5 class="card-title text-upper">ПРИВЕТ</h5>
+                        <p class="card-text card-text-f">Чтобы начать, кликни самую правую карту!</p>
+                      </div>
+                    </div>
+                </div>
+
+                <div id ="card_2" class="col-3 p-card d-flex justify-content-center">
+                    <div class="card text-white shadow mid-transition-scale resize" style="width: 80%;">
+                      <img height="513px" width="100%" src="images/image74.jpg" class="card-img-top" alt="...">
+                      <div class="card-body bg-danger text-center">
+                        <h5 class="card-title text-upper">олдфаг</h5>
+                        <p class="card-text card-text-f">Назвать 3 песни Стрыкало</p>
+                      </div>
+                    </div>
+                </div>
+
+                <div id ="card_3" class="col-3 p-card d-flex justify-content-center">
+                    <div class="card text-white shadow mid-transition-scale" style="width: 65%;" onclick="swap_cards(card_list);">
+                      <img height="416px" width="100%" src="images/image72.jpg" class="card-img-top" alt="...">
+                      <div class="card-body bg-teal" style="filter: blur(7px);">
+                        <h5 class="card-title text-upper">Было время</h5>
+                        <p class="card-text card-text-f">Назови 5 вкусов сухариков 3 корочки</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex mt-5">
+            <div class="d-flex col-12 justify-content-center align-items-center">
+                <div id="timer" class="example-1" onclick="timerStart();">10</div>
+            </div>
+<!--             <div class="d-flex col-6 justify-content-center align-items-center">
+                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            </div> -->
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/tasks.js"></script>
+    <script type="text/javascript" src="js/shuffle.js"></script>
+    <script type="text/javascript" src="js/timer.js"></script>
+    <script type="text/javascript" src="js/background-theme.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+
+@import "compass/css3";
+
+.shadow {
+  box-shadow: -6px 6px 14px 12px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important
+}
+
+.shadow:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.55), 0 10px 10px rgba(0,0,0,0.22) !important;
+  cursor: pointer;
+}
+
+.mid-transition-scale {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.15s linear;
+}
+
+.mid-transition-scale:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.bg-teal {
+  background-color: teal !important;
+  text-align: center;
+}
+
+@keyframes shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+     }
+     100% {
+          box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+     }
+}
+
+.example-1{
+  cursor: pointer;
+  margin: 40px;
+  width: 130px;
+  height: 130px;
+  font: 2.3rem/130px 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  background: rgba(30, 144, 255, 0.6);
+  border-radius: 50%;
+  transform: background;
+  transition: 0.55s linear;
+  box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.35);
+}
+
+.text-upper{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+
+.card-text-f {
+    font-size: 1.2rem;
+}
+
+.menu-side {
+
+  position: absolute;
+}
+
+.background-theme {
+  box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
